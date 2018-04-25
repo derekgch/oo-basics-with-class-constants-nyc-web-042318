@@ -26,3 +26,6 @@ end
 
 
 k = Shoe.new("uss")
+
+puts k.brand
+puts Shoe.BRANDS
