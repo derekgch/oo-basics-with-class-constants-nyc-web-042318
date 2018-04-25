@@ -23,3 +23,6 @@ BRANDS = []
   end
 
 end
+
+
+k = Shoe.new("uss")
