@@ -3,12 +3,13 @@ require 'pry'
 class Shoe
 
   attr_accessor :color, :size, :material, :condition
-  attr_reader :brand, :brands
+  attr_reader :brand
 
   BRANDS = []
 
   def initialize(brand)
     @brand = brand
+    BRANDS << brands
   end
 
   def cobble
@@ -16,16 +17,6 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  def brands=(brands)
-    @brands = brands
-    BRANDS << brands
 
-  end
 
 end
-
-
-k = Shoe.new("uss")
-
-puts k.brand
-puts Shoe.BRANDS
