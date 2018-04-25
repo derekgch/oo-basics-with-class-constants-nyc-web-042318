@@ -12,7 +12,7 @@ BRANDS = []
     puts "Your shoe is as good as new!"
   end
 
-  def BRANDS=(brands)
+  def brands=(brands)
     @brands = brands
     BRANDS << brands
 
