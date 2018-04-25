@@ -12,4 +12,10 @@ ALL_BRAND = []
     puts "Your shoe is as good as new!"
   end
 
+  def all_brand=(all_brand)
+    @all_brand = all_brand
+    ALL_BRAND << all_brand
+    
+  end
+
 end
