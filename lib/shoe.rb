@@ -1,7 +1,7 @@
 require 'pry'
 
 class Shoe
-  
+
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand, :brands
 
@@ -19,6 +19,7 @@ BRANDS = []
   def brands=(brands)
     @brands = brands
     BRANDS << brands
+    binding.pry
   end
 
 end
